@@ -1,0 +1,52 @@
+[alias]
+    b = branch
+    br = branch
+    changed = update-index --no-assume-unchanged
+    ci = commit
+    cia = commit --all
+    cim = commit --amend
+    cima = commit --amend --all
+    co = checkout
+    crp = cherry-pick
+    d = diff
+    dfl = diff --name-status
+    dfs = diff --staged
+    dl = diff HEAD^
+    f = fetch --tags
+    g = grep -in
+    hide = update-index --assume-unchanged
+    last = log -1 HEAD
+    load = stash pop
+    logg = log --graph --decorate --oneline --abbrev-commit --all
+    logo = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    logs = log --all --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+    mgf = merge --ff-only
+    p = push
+    pf = push -f
+    puo = push -u o
+    puz = push -u z
+    rb = rebase
+    rbc = rebase --continue
+    rbi = rebase -i
+    regret = reset HEAD^
+    rh = reset --hard
+    rhd = reset --hard z/dev
+    rp = remote prune
+    rroo = remote rename origin o
+    save = stash
+    slog = log --graph --decorate --oneline --all --simplify-by-decoration
+    squash = rebase HEAD~2 -i
+    unhide = update-index --no-assume-unchanged
+    st = status
+    unchanged = update-index --assume-unchanged
+    yes = log --oneline --since yesterday --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+[core]
+    editor = vim
+    autocrlf = false
+    ignorecase = false
+[color]
+    ui = true
+[merge]
+    tool = vimdiff
+[push]
+    default = simple
